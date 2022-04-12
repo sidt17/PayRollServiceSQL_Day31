@@ -23,3 +23,16 @@ select * from Employee_payroll
 --UC5-Retrive data for particular table
 select Salary from Employee_payroll where Name='Bill';
 select * from Employee_payroll where  StartDate between CAST('2018/01/01' as date) and getdate();
+
+--UC6-Add gender in employee payroll table
+alter table Employee_payroll
+ add Gender varchar(10);
+update employee_payroll 
+set Gender = 'M'
+ where  Name='Rahul' or Name = 'Sid'
+
+update employee_payroll 
+set Gender = 'F' 
+where  Name='Priyanka' or Name = 'Akansha'
+
+
