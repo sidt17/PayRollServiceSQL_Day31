@@ -17,3 +17,5 @@ insert into employee_payroll values ('Sid','45,000','2020-01-01')
 insert into employee_payroll values ('Priyanka','40,000','2021-01-01')
 insert into employee_payroll values ('Akansha','50,000','2022-01-01')
 
+--UC4-Retrievieving employee payroll data
+select * from Employee_payroll
