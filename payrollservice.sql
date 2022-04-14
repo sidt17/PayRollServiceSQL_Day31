@@ -67,3 +67,9 @@ select MIN(Salary) as Minofsalary from Employee_payroll;
 select MAX(Salary) as Maxofsalary from Employee_payroll;
 select count(Id) from Employee_payroll;
 select count(Id) as NoOfPeople,Gender from Employee_payroll group by Gender;
+
+--UC8- Extend table to store information like employee phone, address and department
+alter table Employee_payroll add PhoneNo int;
+alter table Employee_payroll add Address varchar(250) not null default 'Mumbai';
+alter table Employee_payroll add Department varchar(250) not null default 'Testing';
+select * from Employee_payroll;
