@@ -73,3 +73,7 @@ alter table Employee_payroll add PhoneNo int;
 alter table Employee_payroll add Address varchar(250) not null default 'Mumbai';
 alter table Employee_payroll add Department varchar(250) not null default 'Testing';
 select * from Employee_payroll;
+
+--UC9-extend employee payroll table to have basic pay, deductions,taxable pay,income tax,net pay
+alter table Employee_payRoll
+add Deduction float,TaxablePay float,IncomeTax float,NetPay float;
